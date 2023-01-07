@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.dashboard.DashboardFragment">
+
+    <EditText
+        android:id="@+id/AddVehiclePlateNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:hint="Vehicle Plate Number"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:textColorHint="@color/black"
+        android:id="@+id/AddVehicleHolderName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="Vehicle Holder Name"
+        android:layout_below="@id/AddVehiclePlateNumber"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="18dp"/>
+
+    <EditText
+        android:textColorHint="@color/black"
+        android:id="@+id/AddVehicleModal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="Vehicle Modal/Company"
+        android:textStyle="bold"
+        android:layout_below="@id/AddVehicleHolderName"
+        android:textColor="@color/black"
+        android:textSize="18dp"/>
+
+    <Button
+        android:id="@+id/AddToNakaDatabase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/AddVehicleModal"
+        android:layout_margin="20dp"
+        android:backgroundTint="#0091EA"
+        android:textSize="18dp"
+        android:text="Add To Naka Database"
+        />
+
+</RelativeLayout>
